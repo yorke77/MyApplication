@@ -22,6 +22,9 @@ public class MainActivity extends AppCompatActivity {
             Log.i("MainActivity", "Value:" + i);
         }
 
+        //Ctrl+P 显示可用方法签名 //Ctrl+Shift+Enter 自动补全这行：添加分号到结尾
+        Log.d("MainActivity", "A message");
+
     }
 
     private void getWelcomeString() {
@@ -31,5 +34,8 @@ public class MainActivity extends AppCompatActivity {
         //Alt+Enter 列出意图行为
         TextView tv = findViewById(R.id.myTextView);
         tv.setText(myUtil.getValue());
+
+        //Ctrl+Shift+Space 自动赋值
+        MyTextUtil util2 = myUtil;
     }
 }
